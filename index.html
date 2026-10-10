@@ -4,110 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-width=device-width,initial-scale=1.0">
     <title>Orange Challenge Solution</title>
-    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
-<body>
-   <div class="navigation">
-       <input type="checkbox" class="navigation__checkbox" id="checkbox">
-       <label for="checkbox" class="navigation__label">
-           <span class="navigation__hamberg"></span>
+<body class="m-0 p-0 selection:bg-orange-600 selection:text-white">
+   <div class="fixed z-10">
+       <input type="checkbox" class="peer hidden" id="checkbox">
+       <label for="checkbox" class="fixed right-12 top-12 z-20 h-26 w-26 cursor-pointer rounded-full bg-white shadow-[0.4rem_0.4rem_2rem_rgba(0,0,0,0.3)]">
+           <span class="absolute left-6 top-[3.1rem] h-2.5 w-[3.4rem] rounded-full bg-black transition-all duration-300 before:absolute before:left-0 before:top-[-1rem] before:h-full before:w-full before:rounded-full before:bg-black before:transition-all before:duration-300 after:absolute after:left-0 after:top-[1rem] after:h-full after:w-full after:rounded-full after:bg-black after:transition-all after:duration-300 hover:before:top-[-1.2rem] hover:after:top-[1.2rem] peer-checked:bg-transparent peer-checked:before:mt-4 peer-checked:before:rotate-[135deg] peer-checked:after:mt-[-0.25rem] peer-checked:after:rotate-[-135deg]"></span>
        </label>
-       <div class="navigation__background"></div>
-       <nav class="navigation__nav">
-           <ul class="navigation__ul">
-               <li class="navigation__li">order</li>
-               <li class="navigation__li">Menu</li>
-               <li class="navigation__li">Services</li>
-               <li class="navigation__li">contact</li>
-               <li class="navigation__li">Our shops</li>
+       <div class="fixed right-[3.2rem] top-[3.2rem] -z-10 h-24 w-24 rounded-full bg-gradient-to-r from-red-600 to-orange-500 transition-all duration-[800ms] peer-checked:scale-[60]"></div>
+       <nav class="invisible fixed left-[-50%] top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-all duration-[800ms] peer-checked:visible peer-checked:left-1/2 peer-checked:opacity-100">
+           <ul class="list-none text-center font-['Pacifico'] text-[4rem] uppercase">
+               <li class="relative z-10 text-white before:absolute before:left-0 before:top-0 before:-z-10 before:h-[92%] before:w-full before:bg-[linear-gradient(105deg,transparent_50%,white_50%)] before:bg-[length:56rem] before:bg-[position:0rem] before:transition-all before:duration-500 hover:text-orange-600 hover:before:bg-[-29rem]">order</li>
+               <li class="relative z-10 text-white before:absolute before:left-0 before:top-0 before:-z-10 before:h-[92%] before:w-full before:bg-[linear-gradient(105deg,transparent_50%,white_50%)] before:bg-[length:56rem] before:bg-[position:0rem] before:transition-all before:duration-500 hover:text-orange-600 hover:before:bg-[-29rem]">Menu</li>
+               <li class="relative z-10 text-white before:absolute before:left-0 before:top-0 before:-z-10 before:h-[92%] before:w-full before:bg-[linear-gradient(105deg,transparent_50%,white_50%)] before:bg-[length:56rem] before:bg-[position:0rem] before:transition-all before:duration-500 hover:text-orange-600 hover:before:bg-[-29rem]">Services</li>
+               <li class="relative z-10 text-white before:absolute before:left-0 before:top-0 before:-z-10 before:h-[92%] before:w-full before:bg-[linear-gradient(105deg,transparent_50%,white_50%)] before:bg-[length:56rem] before:bg-[position:0rem] before:transition-all before:duration-500 hover:text-orange-600 hover:before:bg-[-29rem]">contact</li>
+               <li class="relative z-10 text-white before:absolute before:left-0 before:top-0 before:-z-10 before:h-[92%] before:w-full before:bg-[linear-gradient(105deg,transparent_50%,white_50%)] before:bg-[length:56rem] before:bg-[position:0rem] before:transition-all before:duration-500 hover:text-orange-600 hover:before:bg-[-29rem]">Our shops</li>
            </ul>
        </nav>
    </div>
-    <header class="header">
-       <div class="header__logo">
-           <h2 class="header__logo-br">{<div class="header__logo-br-play"></div>}</h2>
-           
+    <header class="relative h-[60rem] w-full bg-[linear-gradient(to_right,rgba(255,0,0,0.8),rgba(255,144,0,0.8)),url('img/juice1.jpg')] bg-cover font-['Pacifico'] text-[#f7f7f7]">
+       <div class="absolute left-1/2 top-[8%] -translate-x-1/2 font-arial max-sm:top-[15%]">
+           <h2 class="inline-block text-[9rem] not-italic">{<span class="mb-[-0.5rem] ml-8 mr-4 inline-block h-24 w-24 rounded-[3px] bg-green-600 [clip-path:polygon(0_0,100%_50%,0_100%)]"></span>}</h2>
        </div>
-        <div class="header__container">
-            <h2 class="header__container-heading">Learn Code Online</h2>
-            <p class="header__container-desc">Full Organic and Hygenic Ever</p>
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[90%] max-sm:w-full max-sm:text-center">
+            <h2 class="text-[7rem] max-sm:text-[4.4rem]">Learn Code Online</h2>
+            <p class="mt-[-3rem] text-center text-[3rem] tracking-[0.7rem] max-sm:text-[1.8rem] max-sm:tracking-[0.5rem]">Full Organic and Hygenic Ever</p>
         </div>
     </header>
-    <main class="about">
-        <h3 class="about__heading">
+    <main class="relative top-[-16rem] z-[1] h-[50rem] w-full rounded-bl-none rounded-br-[16rem] rounded-tl-[16rem] bg-[#f7f7f7] text-center font-['Pacifico'] max-sm:h-[93rem]">
+        <h3 class="relative top-8 bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-[4rem] font-semibold text-transparent max-sm:top-32 max-sm:text-[3rem]">
             We Serve Best And Quality Tested Juices
         </h3>
-        <div class="about__left">
-            <h4 class="about__left-desc">Juice from fruits of India's best fruits</h4>
-            <h5 class="about__left-deb">Visit our shop and fell the difference.Best Quality made from fresh fruits.Juices of all fruits are available in our shop at best price</h5>
+        <div class="absolute left-24 top-40 h-[70%] w-[52%] bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent max-sm:left-1/2 max-sm:-translate-x-1/2">
+            <h4 class="mt-36 text-[3rem] font-normal">Juice from fruits of India's best fruits</h4>
+            <h5 class="text-[2.4rem] font-thin">Visit our shop and fell the difference.Best Quality made from fresh fruits.Juices of all fruits are available in our shop at best price</h5>
         </div>
-        <div class="about__right">
-            <img src="img/apple%20juice.jpg" alt="fruits" class="about__right-1 about__right-img">
-            <img src="img/orangejuice.jpg" alt="fruits" class="about__right-2 about__right-img">
-            <img src="img/bananajuice.jpg" alt="fruits" class="about__right-3 about__right-img">
+        <div class="absolute right-24 top-40 h-[70%] w-[36%] max-sm:left-[40%] max-sm:top-[55rem] max-sm:-translate-x-1/2 max-[360px]:-translate-x-[80%]">
+            <img src="img/apple%20juice.jpg" alt="fruits" class="absolute left-0 top-44 h-56 w-96 bg-green-600 transition-all duration-500 hover:z-[1] hover:scale-120 hover:outline hover:outline-[10px] hover:outline-orange-500 hover:outline-offset-[1.8rem] max-sm:h-48 max-sm:w-80">
+            <img src="img/orangejuice.jpg" alt="fruits" class="absolute left-32 top-24 h-56 w-96 bg-green-600 transition-all duration-500 hover:z-[1] hover:scale-120 hover:outline hover:outline-[10px] hover:outline-orange-500 hover:outline-offset-[1.8rem] max-sm:h-48 max-sm:w-80">
+            <img src="img/bananajuice.jpg" alt="fruits" class="absolute left-64 top-60 h-56 w-96 bg-green-600 transition-all duration-500 hover:z-[1] hover:scale-120 hover:outline hover:outline-[10px] hover:outline-orange-500 hover:outline-offset-[1.8rem] max-sm:h-48 max-sm:w-80">
         </div>
     </main>
-    <section class="services">
-        <div class="card">
-            <div class="card__top">
-              
-            </div>
-              <h2 class="card__top-heading">Apple  Juice</h2>
-            <div class="card__bottom">
-                <p class="card__bottom-desc">Packed with benefits of vitamins , calcium, potassium and magnesium the juice give adequate health punch </p>
+    <section class="relative mt-[-32rem] flex h-[80rem] w-full items-center justify-around bg-[linear-gradient(to_right,rgba(255,0,0,0.8),rgba(255,144,0,0.8)),url('img/fruits.jpg')] bg-cover max-sm:h-[200rem] max-sm:flex-col max-sm:justify-center">
+        <div class="relative h-[36rem] w-88 overflow-hidden rounded-[5px] bg-white font-['Pacifico'] max-sm:mt-32 max-sm:h-[44rem] max-sm:w-112">
+            <div class="absolute h-[40%] w-full bg-[url('img/juice1.jpg')] bg-cover [clip-path:polygon(0_0,100%_0,100%_75%,0_100%)]"></div>
+            <h2 class="absolute right-0 top-[30%] inline-block bg-orange-500 text-[3rem] text-white">Apple Juice</h2>
+            <div class="absolute top-[40%] h-[60%] w-full text-center">
+                <p class="p-4 pt-16 text-[1.7rem]">Packed with benefits of vitamins , calcium, potassium and magnesium the juice give adequate health punch </p>
             </div>
         </div>
-        <div class="card">
-            <div class="card__top">
-              
-            </div>
-              <h2 class="card__top-heading">Orange Juice</h2>
-            <div class="card__bottom">
-                 <p class="card__bottom-desc">Righest source of vitamin boost immune system,source of fibre, prevent kidney stones and improved blood circulation</p>
+        <div class="relative h-[36rem] w-88 overflow-hidden rounded-[5px] bg-white font-['Pacifico'] max-sm:mt-32 max-sm:h-[44rem] max-sm:w-112">
+            <div class="absolute h-[40%] w-full bg-[url('img/juice1.jpg')] bg-cover [clip-path:polygon(0_0,100%_0,100%_75%,0_100%)]"></div>
+            <h2 class="absolute right-0 top-[30%] inline-block bg-orange-500 text-[3rem] text-white">Orange Juice</h2>
+            <div class="absolute top-[40%] h-[60%] w-full text-center">
+                 <p class="p-4 pt-16 text-[1.7rem]">Righest source of vitamin boost immune system,source of fibre, prevent kidney stones and improved blood circulation</p>
             </div>
         </div>
-        <div class="card">
-            <div class="card__top">
-              
-            </div>
-              <h2 class="card__top-heading">Banana Juice</h2>
-            <div class="card__bottom">
-                 <p class="card__bottom-desc">High fibre content contribute to proper function of bodyand keeps you healthy maintains heart health,ease in digestion </p>
+        <div class="relative h-[36rem] w-88 overflow-hidden rounded-[5px] bg-white font-['Pacifico'] max-sm:mt-32 max-sm:h-[44rem] max-sm:w-112">
+            <div class="absolute h-[40%] w-full bg-[url('img/juice1.jpg')] bg-cover [clip-path:polygon(0_0,100%_0,100%_75%,0_100%)]"></div>
+            <h2 class="absolute right-0 top-[30%] inline-block bg-orange-500 text-[3rem] text-white">Banana Juice</h2>
+            <div class="absolute top-[40%] h-[60%] w-full text-center">
+                 <p class="p-4 pt-16 text-[1.7rem]">High fibre content contribute to proper function of bodyand keeps you healthy maintains heart health,ease in digestion </p>
             </div>
         </div>
     </section>
-    <main class="contact">
-        <div class="contact__form">
-           
-            <form action="#" class="form">
-              <h2 class="contact__form-heading">Mail Us</h2>
-               <input type="text" class="form__input" placeholder="Name">
-                <input type="text" class="form__input" placeholder="Email">
-                <input type="submit" class="form__input" value="SEND">
+    <main class="relative top-[-16rem] h-[60rem] w-full rounded-br-[16rem] rounded-tl-[16rem] bg-[#f7f7f7]">
+        <div class="absolute left-1/2 top-1/2 h-[80%] w-[70%] -translate-x-1/2 -translate-y-1/2 rounded-[5px] bg-[linear-gradient(108deg,rgba(255,144,0,0.8)_50%,transparent_50%),url('img/fruits.jpg')] bg-cover max-sm:bg-gradient-to-r max-sm:from-red-600/80 max-sm:to-orange-500/80">
+            <form action="#" class="ml-4 mt-16 flex h-full w-1/2 flex-col items-center max-sm:ml-1 max-sm:mt-28 max-sm:w-full">
+              <h2 class="mb-8 inline-block font-['Pacifico'] text-[5rem] font-extralight uppercase text-white max-sm:text-center max-sm:text-[4rem]">Mail Us</h2>
+               <input type="text" class="mb-8 block w-96 rounded-[3px] border-none bg-white/50 px-8 py-6 placeholder:text-[1.4rem] placeholder:text-white focus:border-b-[3px] focus:border-white focus:outline-none invalid:focus:border-red-600" placeholder="Name">
+                <input type="text" class="mb-8 block w-96 rounded-[3px] border-none bg-white/50 px-8 py-6 placeholder:text-[1.4rem] placeholder:text-white focus:border-b-[3px] focus:border-white focus:outline-none invalid:focus:border-red-600" placeholder="Email">
+                <input type="submit" class="w-72 rounded-full border-2 border-orange-500 bg-white/40 px-8 py-6 text-white transition-all duration-300 hover:border-[3px] hover:bg-white hover:text-orange-500" value="SEND">
             </form>
         </div>
     </main>
-    <section class="footer">
-            <h2 class="footer__heading-m">Learn Code Online</h2>
-            <h4 class="footer__heading-p">full organic and hygenic ever</h4>
+    <section class="relative z-[-1] mt-[-32rem] h-[60rem] w-full bg-[linear-gradient(to_right,rgba(255,0,0,0.8),rgba(255,144,0,0.8)),url('img/fruits.jpg')] bg-cover text-center font-['Pacifico'] text-white max-sm:h-[70rem]">
+            <h2 class="relative top-64 text-[6rem] max-sm:top-68 max-sm:text-[4.4rem]">Learn Code Online</h2>
+            <h4 class="relative top-58 text-[2rem] tracking-[0.8rem] max-sm:top-[15.8rem] max-sm:text-[1.8rem] max-sm:tracking-[0.5rem]">full organic and hygenic ever</h4>
         
-            <div class="footer__left">
-                <div class="footer__left-heading">Important Links</div>
-                <a href="#" class="footer__left-link">Order Online</a>
-                <a href="#" class="footer__left-link">Contact Us</a>
-                <a href="#" class="footer__left-link">Customer Support</a>
-                <a href="#" class="footer__left-link">Prices</a>
-                <a href="#" class="footer__left-link">About Us</a>
+            <div class="absolute bottom-16 left-[5%] h-[40%] w-[40%] max-sm:top-120 max-sm:w-[90%]">
+                <div class="text-[3.4rem] font-normal">Important Links</div>
+                <a href="#" class="mr-8 text-[2rem] text-white no-underline">Order Online</a>
+                <a href="#" class="mr-8 text-[2rem] text-white no-underline">Contact Us</a>
+                <a href="#" class="mr-8 text-[2rem] text-white no-underline">Customer Support</a>
+                <a href="#" class="mr-8 text-[2rem] text-white no-underline">Prices</a>
+                <a href="#" class="mr-8 text-[2rem] text-white no-underline">About Us</a>
             </div>
-            <span class="footer__sep">   </span>
-            <div class="footer__right">
-                <h3 class="footer__right-heading">Contact Us</h3>
-                <p class="footer__right-desc">At-Tara Boys Hostel in Purushottam Palace<br>GM Road,Patna,<br>800001<br>tel: <a href="tel:+917255892507" class="footer__right-link">+91 7255892507</a></p>
+            <span class="absolute bottom-16 left-1/2 h-[40%] w-4 bg-orange-600 max-sm:hidden">   </span>
+            <div class="absolute bottom-16 right-[5%] h-[40%] w-[40%] max-sm:bottom-0 max-sm:w-[90%]">
+                <h3 class="text-[3.4rem] font-normal">Contact Us</h3>
+                <p class="text-[2rem]">At-Tara Boys Hostel in Purushottam Palace<br>GM Road,Patna,<br>800001<br>tel: <a href="tel:+917255892507" class="text-white no-underline">+91 7255892507</a></p>
             </div>
     </section>
-    <footer class="mfooter">
-        <h2 class="mfooter__desc">All the rights of this site are reserved to Aditya Kumar</h2>
+    <footer class="absolute h-12 w-full bg-orange-600 text-center leading-[2] text-snow">
+        <h2>All the rights of this site are reserved to Aditya Kumar</h2>
     </footer>
 </body>
 </html>
