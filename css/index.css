@@ -475,3 +475,33 @@ html {
   .navigation__checkbox:checked ~ .navigation__label .navigation__hamberg::after {
     transform: rotate(-135deg);
     margin-top: -1rem; }
+
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem); }
+
+.card__bottom {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white; }
+
+.contact__form {
+  background-image: linear-gradient(108deg, rgba(255, 144, 0, 0.45) 50%, rgba(255, 255, 255, 0.12) 50%), url("../img/fruits.jpg");
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem); }
+
+.form__input {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.6rem);
+  -webkit-backdrop-filter: blur(0.6rem); }
+
+.navigation__label {
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem); }
